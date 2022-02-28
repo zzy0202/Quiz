@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: calc(100vw / 3.75);
+}
+.mainDiv {
+    overflow: hidden;
+}
+.startAnswer {
+    width: 3.75rem;
+    height: 100vh;
+    background-color: pink;
+    position: relative;
+    display: none;
+}
+.startAnswer>div {
+    font-size: 0.20rem;
+    width: 2.5rem;
+    height: 0.90rem;
+    background-color: mediumpurple;
+    position: absolute;
+    top: calc(50% - 0.45rem);
+    left: calc(50% - 1.25rem);
+    border-radius: 0.2rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: white;
+}
+.questionShow {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1081ee;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.questionShow img {
+    width: 0.8em;
+    height: 0.8rem;
+    margin-top: 0.6rem;
+}
+.questionShow h6 {
+    font-size: 0.35rem;
+    color: black;
+    top: 0.95rem;
+    position: absolute;
+}
+.active {
+    display: flex;
+}
+.questionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3rem;
+}
+
+.question {
+    font-size: 0.25rem;
+    margin: 0 0.2rem;
+    color: white;
+}
+
+.answerSection {
+    width: 3.0rem;
+    height: 2.8rem;
+    background-color: orange;
+    border-radius: 0.2rem;
+}
+ol {
+    margin-top: 0.2rem;
+}
+li {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.25rem;
+    margin: 0.15rem 0.3rem 0 0.4rem;
+}
+
+.wrongAns,.correctAns {
+    background-color: red;
+    border-radius: 0.05rem;
+    width: 2.0rem;
+}
+.correctAns {
+    background-color: greenyellow;
+}
+.result h6 {
+    font-size: 0.1rem;
+}
+.score,.questionAmount {
+    font-size: 0.2rem;
+    color: white;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.2rem;
+}
+.questionAmount {
+    top: 0.6rem;
+}
+
+button {
+    border: 3px #efefef solid;
+    height: 0.5rem;
+    margin-top: 0.3rem;
+    font-size: 0.2rem;
+    border-radius: 0.15rem;
+    width: 1.0rem;
+    background-color: pink;
+}
